@@ -9,5 +9,10 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	$('.likeCtr').click(likeIt);
+}
+function likeIt(e) {
+  console.log("I like it...");
+	// Prevent following the link
+	e.preventDefault();
 }
